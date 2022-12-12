@@ -1,0 +1,31 @@
+
+<app-emp-navbar></app-emp-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table table-bordered border-primary">
+                        <thead>
+                        <tr scope="row">
+                            <th scope="col">name</th>
+                            <th scope="col">employee code</th>
+                            <th scope="col">task name</th>
+                            <th scope="col">due date</th>
+                            <th scope="col">task status</th>
+                        </tr></thead>
+                        <tbody>
+                        <tr *ngFor="let i of data" scope="row">
+                            <td scope="col">{{i.name}}</td>
+                            <td scope="col">{{i.employee_code}}</td>
+                            <td scope="col">{{i.task_name}}</td>
+                            <td scope="col">{{i.due_date}}</td>
+                            <td scope="col">{{i.task_status}}</td>
+                        </tr></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
