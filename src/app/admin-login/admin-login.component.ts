@@ -14,7 +14,7 @@ export class AdminLoginComponent {
   login=()=>{
     if(this.username=="admin" && this.password=="12345"){
       localStorage.setItem("nav","2")
-      this.route.navigate(['/dash'])
+      this.route.navigate(['/add'])
       this.username=""
       this.password=""
     }else{
